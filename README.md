@@ -1,5 +1,5 @@
 # Ocaml-On-Pixelbook
-Run OCaml on a pixel book. This probabl works on Vanilla Ubuntu as well
+Run OCaml on a pixel book. This probably works on Vanilla Ubuntu as well
 
 # Pre Install Chromebook Stuff
 Install termux and configure
