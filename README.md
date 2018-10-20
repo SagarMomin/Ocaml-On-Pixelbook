@@ -6,8 +6,8 @@ Install termux and configure
 Check to make sure back button is working in chrome  
 Remap keys  
 * Caps -> Control  
-* Control -> App drawer  
-Update touchpad settings (prefer Austrailian [apple calls "natural"]
+* Control -> App drawer
+* Update touchpad settings (prefer Austrailian [apple calls "natural"]
 
 # Linux/Crostini:
 enable in settings  
