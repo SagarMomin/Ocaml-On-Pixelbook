@@ -62,8 +62,10 @@ $ tar -xvzf js-1.4-2.tar.gz
 $ opam pin add ocamlformat ocamlformat-js-1.4-2
 ~~~~
 
-# Install ppx_deriving_yojson from github. Opam version doesn’t build. Put in external
+# Install ppx_deriving_yojson from github. 
 ~~~~
+# Version in Opam doesn’t build. 
+# I put in external with all the other pinned libraries
 $ git clone https://github.com/ocaml-ppx/ppx_deriving_yojson.git
 $ opam pin add ppx_deriving_yojson ppx_deriving_yojson
 ~~~~
