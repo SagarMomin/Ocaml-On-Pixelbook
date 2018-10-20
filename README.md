@@ -5,8 +5,8 @@ Run OCaml on a pixel book. This probably works on Vanilla Ubuntu as well
 Install termux and configure  
 Check to make sure back button is working in chrome  
 Remap keys  
-  Caps -> Control  
-  Control -> App drawer  
+* Caps -> Control  
+* Control -> App drawer  
 Update touchpad settings (prefer Austrailian [apple calls "natural"]
 
 # Linux/Crostini:
