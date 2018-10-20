@@ -5,13 +5,13 @@ Run OCaml on a pixel book. This probabl works on Vanilla Ubuntu as well
 Install termux and configure
 Check to make sure back button is working in chrome
 Remap keys 
---Caps -> Control
---Control -> App drawer
+  Caps -> Control
+  Control -> App drawer
 Update touchpad settings (prefer Austrailian [apple calls "natural"]
 
 # Linux/Crostini:
 enable in settings
--- In settings just search “Linux”
+* In settings just search “Linux”
 
 # Install OCaml stuff:
 https://dev.realworldocaml.org/install.html
@@ -37,10 +37,11 @@ $ opam install patdiff
 
 # Housekeeping
 Ocaml Code directory structure I  like to put stuff in
--workspaces
- --app
- --lib
- --external
+* workspaces
+  * app
+  * lib
+  * external
+
 In external I put all my opam pin’d libraries
 
 # Install sexp
