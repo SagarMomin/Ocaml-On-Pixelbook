@@ -108,7 +108,7 @@ $ cd ~/.vim && ./fix-python3.sh
 ~~~~
 
 # Git stuff
-in ~.gitconfig:
+in ~.gitconfig: (If you do this, don't use user/password. USE A TOKEN)
 ~~~~
 ---------------------------------------------------------------------------------------
 [credential]
