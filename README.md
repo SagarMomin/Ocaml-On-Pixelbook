@@ -114,12 +114,12 @@ in ~.gitconfig: (If you do this, don't use user/password. USE A TOKEN)
 ~~~~
 ---------------------------------------------------------------------------------------
 [credential]
-       helper = store
+  helper = store
 [diff]
-       external = /home/sagarmomin/.local/bin/patdiff-git.sh
+  external = /home/sagarmomin/.opam/4.06.1/bin/patdiff-git-wrapper
 [user]
-       email = {EMAIL}
-       name = Sagar
+  email = {EMAIL}
+  name = Sagar
 ---------------------------------------------------------------------------------------
 ~~~~
 
