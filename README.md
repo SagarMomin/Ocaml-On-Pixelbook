@@ -134,9 +134,9 @@ patdiff "$2" "$5" | cat
 
 
 # Issues
-X There is an issue with dune 1.2.1. I needed to roll back to 1.1.1
-  X Download from: https://opam.ocaml.org/packages/dune/dune.1.1.1/
-  X untar as "dune" into workspaces/external
-  X opam pin add dune dune
+* There is an issue with dune 1.2.1. I needed to roll back to 1.1.1
+  * Download from: https://opam.ocaml.org/packages/dune/dune.1.1.1/
+  * untar as "dune" into workspaces/external
+  * opam pin add dune dune
 * latest version of sexp relies on code that's not in core yet, which is why I rolled back to the specific git checkout
 * The latest Js ocamlformat does not style quite the way I like. I am running a specific version
