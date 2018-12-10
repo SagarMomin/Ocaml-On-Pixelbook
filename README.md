@@ -75,6 +75,8 @@ $ opam pin add ppx_deriving_yojson ppx_deriving_yojson
 $ sudo apt-get install xorg strace man nmap inetutils-ping inotify-tools
 # tmux 2.7 install (run a newer version) then default ubuntu repo, or build manually
 # https://backports.debian.org/Instructions/
+$ sudo echo "deb http://ftp.debian.org/debian stretch-backports main" >> /etc/apt/sources.list.d/sources.list
+$ apt-get update
 $ apt-get -t stretch-backports install tmux
 
 # Install ripgrep
