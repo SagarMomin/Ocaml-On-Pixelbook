@@ -49,7 +49,7 @@ In external I put all my opam pin’d libraries
 $ git clone https://github.com/janestreet/sexp.git
 $ git checkout 1ea78004d4fcc0fe2148147ca72b32ec722495f0
 # Currently the tip of sexp.git isn’t working. Install this version for now, in external
-$ opam pin sexp sexp
+$ opam pin add sexp sexp
 ~~~~
 
 # Install js ocamlformat
@@ -72,7 +72,7 @@ $ opam pin add ppx_deriving_yojson ppx_deriving_yojson
 
 # Generally useful Linux stuff and other tools
 ~~~~
-$ sudo apt-get install xorg strace man nmap inetutils-ping 
+$ sudo apt-get install xorg strace man nmap inetutils-ping inotify-tools
 # tmux 2.7 install (run a newer version) then default ubuntu repo, or build manually
 # https://backports.debian.org/Instructions/
 $ apt-get -t stretch-backports install tmux
@@ -132,9 +132,9 @@ patdiff "$2" "$5" | cat
 
 
 # Issues
-* There is an issue with dune 1.2.1. I needed to roll back to 1.1.1
-  * Download from: https://opam.ocaml.org/packages/dune/dune.1.1.1/
-  * untar as "dune" into workspaces/external
-  * opam pin add dune dune
+X There is an issue with dune 1.2.1. I needed to roll back to 1.1.1
+  X Download from: https://opam.ocaml.org/packages/dune/dune.1.1.1/
+  X untar as "dune" into workspaces/external
+  X opam pin add dune dune
 * latest version of sexp relies on code that's not in core yet, which is why I rolled back to the specific git checkout
 * The latest Js ocamlformat does not style quite the way I like. I am running a specific version
