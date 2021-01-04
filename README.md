@@ -73,16 +73,8 @@ $ opam pin add ppx_deriving_yojson ppx_deriving_yojson
 
 # Generally useful Linux stuff and other tools
 ~~~~
-$ sudo apt-get install xorg strace man nmap inetutils-ping inotify-tools
-# tmux 2.7 install (run a newer version) then default ubuntu repo, or build manually
-# https://backports.debian.org/Instructions/
-$ sudo echo "deb http://ftp.debian.org/debian stretch-backports main" >> /etc/apt/sources.list.d/sources.list
-$ apt-get update
-$ apt-get -t stretch-backports install tmux
+$ sudo apt-get install xorg strace man nmap inetutils-ping inotify-tools ripgrep
 
-# Install ripgrep
-$ curl -LO https://github.com/BurntSushi/ripgrep/releases/download/0.8.1/ripgrep_0.8.1_amd64.deb
-$ sudo dpkg -i ripgrep_0.8.1_amd64.deb
 ~~~~
 
 # Install VIM that has python support. I prefer vim-nox
