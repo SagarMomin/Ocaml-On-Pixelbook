@@ -33,7 +33,7 @@ $ opam install async yojson core_extended core_bench cohttp async_graphics crypt
 
 # sagarmomin install some tools
 ~~~~
-$ opam install patdiff
+$ opam install patdiff sexp ocamlformat 
 ~~~~
 
 # Housekeeping
@@ -47,10 +47,10 @@ In external I put all my opam pin’d libraries
 
 # Install sexp
 ~~~~
-$ git clone https://github.com/janestreet/sexp.git
-$ git checkout 1ea78004d4fcc0fe2148147ca72b32ec722495f0
+# $ git clone https://github.com/janestreet/sexp.git
+# $ git checkout 1ea78004d4fcc0fe2148147ca72b32ec722495f0
 # Currently the tip of sexp.git isn’t working. Install this version for now, in external
-$ opam pin add sexp sexp
+# $ opam pin add sexp sexp
 ~~~~
 
 # Install js ocamlformat
