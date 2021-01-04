@@ -20,11 +20,12 @@ https://dev.realworldocaml.org/install.html
 ~~~~
 $ sudo apt-get install curl build-essential m4 zlib1g-dev libssl-dev ocaml ocaml-native-compilers opam
 $ opam init
+$ opam switch create 4.10.0
 $ opam switch # This shows compiler versions
-$ opam switch 4.06.1 # Maybe update this to use 4.07.0
+$ opam switch 4.10.0
 $ opam install core utop
-$ opam depext conf-pkg-config.1.1
-$ opam depext conf-gmp.1
+$ opam depext conf-pkg-config.1.3
+$ opam depext conf-gmp.3
 $ opam depext conf-libpcre.1
 $ opam install async yojson core_extended core_bench cohttp async_graphics cryptokit menhir
 # done with realworld install
