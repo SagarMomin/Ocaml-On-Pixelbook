@@ -46,7 +46,7 @@ In external I put all my opam pin’d libraries
 
 # Generally useful Linux stuff and other tools
 ~~~~
-$ sudo apt-get install curl fzf fdisk grep gzip jq net-tools python3 strace x11-apps xorg strace man nmap inetutils-ping inotify-tools ripgrep
+$ sudo apt-get install curl fdisk fzf grep gzip inetutils-ping inotify-tools jq man net-tools nmap python3 ripgrep strace x11-apps xclip xorg
 
 ~~~~
 
@@ -59,9 +59,18 @@ $ git clone https://github.com/SagarMomin/vim-config.git ~/.vim
 
 # Making OCaml + vim = :D
 ~~~~
-$ opam install ocamlspot ocp-indent user-setup merlin
-$ opam user-setup install # Not strictly necessary
+$ opam install merlin ocp-indent
+$ opam install user-setup # Not strictly necessary
 $ opam init
+~~~~
+
+# Make sure Core is available in utop
+~~~~
+$ cat << EOM >> ~/.ocamlinit
+#use "topfind";;
+#thread;;
+#require "core.top";;
+EOM
 ~~~~
 
 # Get vim to successfull load via plugin manager
