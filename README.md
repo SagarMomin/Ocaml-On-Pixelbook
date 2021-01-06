@@ -60,7 +60,7 @@ $ git clone https://github.com/SagarMomin/vim-config.git ~/.vim
 ~~~~
 # If you don't want to overwrite your bashrc, you'll have to manually 
 # look through: ~/.vim/system-configs/setup/
-$ bash ~/.vim/system-configs/smash-all-my-configs.sh
+$ cd ~/.vim/system-configs/ && bash smash-all-my-configs.sh && cd -
 # Update inputrc to point to the one in system config
 $ ln -s ~/.vim/system-configs/rcfiles/sane-defaults/inputrc ~/.inputrc
 ~~~~
