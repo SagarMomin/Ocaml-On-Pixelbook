@@ -57,6 +57,13 @@ $ sudo apt-get install vim-nox
 $ git clone https://github.com/SagarMomin/vim-config.git ~/.vim
 ~~~~
 
+# Install opinionated bashrc and tmux configs in order to make sure everything works
+~~~~
+# If you don't want to overwrite your bashrc, you'll have to manually 
+# look through: ~/.vim/system-configs/setup/
+$ bash ~/.vim/system-configs/smash-all-my-configs.sh
+~~~~
+
 # Making OCaml + vim = :D
 ~~~~
 $ opam install merlin ocp-indent
