@@ -47,7 +47,6 @@ In external I put all my opam pin’d libraries
 # Generally useful Linux stuff and other tools
 ~~~~
 $ sudo apt-get install curl fdisk fzf grep gzip inetutils-ping inotify-tools jq man net-tools nmap python3 ripgrep strace x11-apps xclip xorg
-
 ~~~~
 
 # Install VIM that has python support. I prefer vim-nox
@@ -62,6 +61,8 @@ $ git clone https://github.com/SagarMomin/vim-config.git ~/.vim
 # If you don't want to overwrite your bashrc, you'll have to manually 
 # look through: ~/.vim/system-configs/setup/
 $ bash ~/.vim/system-configs/smash-all-my-configs.sh
+# Update inputrc to point to the one in system config
+$ ln -s ~/.vim/system-configs/rcfiles/sane-defaults/inputrc ~/.inputrc
 ~~~~
 
 # Making OCaml + vim = :D
