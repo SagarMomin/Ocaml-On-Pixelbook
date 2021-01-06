@@ -1,8 +1,7 @@
 # Ocaml-On-Pixelbook
-Run OCaml on a pixel book. This probably works on Vanilla Ubuntu as well
+Run OCaml on a Google Pixelbook's Debian VM (Crostini). This probably works on Vanilla Ubuntu as well
 
 # Pre Install Chromebook Stuff
-Install termux and configure  
 Check to make sure back button is working in chrome  
 Remap keys  
 * Caps -> Control  
@@ -16,7 +15,7 @@ enable in settings
 # Install OCaml stuff:
 https://dev.realworldocaml.org/install.html
 
-# RWO install
+# RWO install [Tested on Debian 10 (Buster)]
 ~~~~
 $ sudo apt-get install curl build-essential m4 zlib1g-dev libssl-dev ocaml ocaml-native-compilers opam
 $ opam init
@@ -45,35 +44,9 @@ Ocaml Code directory structure I  like to put stuff in
   
 In external I put all my opam pin’d libraries  
 
-# Install sexp
-~~~~
-# $ git clone https://github.com/janestreet/sexp.git
-# $ git checkout 1ea78004d4fcc0fe2148147ca72b32ec722495f0
-# Currently the tip of sexp.git isn’t working. Install this version for now, in external
-# $ opam pin add sexp sexp
-~~~~
-
-# Install js ocamlformat
-~~~~
-# $ opam pin add ocamlformat -k git https://github.com/janestreet/ocamlformat.git#jane
-# The latest #jane removed some formatting I liked. Notably the ;;. 
-# Run a specific version of js ocamlformat
-$ wget https://github.com/janestreet/ocamlformat/archive/js-1.4-2.zip
-$ tar -xvzf js-1.4-2.tar.gz
-$ opam pin add ocamlformat ocamlformat-js-1.4-2
-~~~~
-
-# Install ppx_deriving_yojson from github. 
-~~~~
-# Version in Opam doesn’t build. 
-# I put in external with all the other pinned libraries
-$ git clone https://github.com/ocaml-ppx/ppx_deriving_yojson.git
-$ opam pin add ppx_deriving_yojson ppx_deriving_yojson
-~~~~
-
 # Generally useful Linux stuff and other tools
 ~~~~
-$ sudo apt-get install xorg strace man nmap inetutils-ping inotify-tools ripgrep
+$ sudo apt-get install curl fzf fdisk grep gzip jq net-tools python3 strace x11-apps xorg strace man nmap inetutils-ping inotify-tools ripgrep
 
 ~~~~
 
@@ -96,20 +69,16 @@ $ opam init
 # start vim, then restart vim
 $ vim
 $ :PlugInstall # in vim
-# Before opening vim, we need to fix the python files to be compatible with python3 (in my vim-config)
-$ cd ~/.vim && ./fix-python3.sh
-# If anything else fails, something is likely missing on the ocaml side
-# Check the errors and make sure all the ocaml packages are installed
 ~~~~
 
 # Git stuff
-in ~.gitconfig: (If you do this, don't use user/password. USE A TOKEN)
+in ~.gitconfig: (If you do this, don't use user/password. Use a token or SSH keys)
 ~~~~
 ---------------------------------------------------------------------------------------
 [credential]
   helper = store
 [diff]
-  external = /home/sagarmomin/.opam/4.06.1/bin/patdiff-git-wrapper
+  external = /home/sagarmomin/.opam/4.10.0/bin/patdiff-git-wrapper
 [user]
   email = {EMAIL}
   name = Sagar
@@ -124,12 +93,3 @@ Patdiff script: [~/.local/bin/patdiff-git.sh] (don't forget to chmod +x)
 patdiff "$2" "$5" | cat
 ---------------------------------------------------------------------------------------
 ~~~~
-
-
-# Issues
-* There is an issue with dune 1.2.1. I needed to roll back to 1.1.1
-  * Download from: https://opam.ocaml.org/packages/dune/dune.1.1.1/
-  * untar as "dune" into workspaces/external
-  * opam pin add dune dune
-* latest version of sexp relies on code that's not in core yet, which is why I rolled back to the specific git checkout
-* The latest Js ocamlformat does not style quite the way I like. I am running a specific version
