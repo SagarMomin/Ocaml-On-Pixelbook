@@ -75,9 +75,12 @@ EOM
 
 # Get vim to successfull load via plugin manager
 ~~~~
-# start vim, then restart vim
-$ vim
-$ :PlugInstall # in vim
+# Make sure VIM is installed. It will error the first time
+$ bash ~/.vim/bin/install.sh
+
+# Deprecated: Manually start vim, then restart vim
+# $ vim
+# $ :PlugInstall # in vim
 ~~~~
 
 # Git stuff
