@@ -23,7 +23,7 @@ $ opam switch # This shows compiler versions, if default is 4.10.0 or higher, sk
 # Uncomment the next two commands if you don't see >4.11.1 as the default version
 $ # opam switch create 4.11.1
 $ # opam switch 4.11.1
-$ opam install core utop async yojson ppx_deriving_yojson core_extended core_bench menhir
+$ opam install core utop async yojson ppx_deriving_yojson core_extended core_bench menhir depext
 $ opam depext conf-pkg-config.1.3
 $ opam depext conf-gmp.3
 $ opam depext conf-libpcre.1
