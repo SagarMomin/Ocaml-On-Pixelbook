@@ -59,8 +59,7 @@ $ git clone https://github.com/SagarMomin/vim-config.git ~/.vim
 
 # Install opinionated bashrc and tmux configs in order to make sure everything works
 ~~~~
-# If you don't want to overwrite your bashrc, you'll have to manually 
-# look through: ~/.vim/system-configs/setup/
+# If you don't want to overwrite your bashrc, you'll have to manually look through: ~/.vim/system-configs/setup/
 $ cd ~/.vim/system-configs/ && bash smash-all-my-configs.sh && cd -
 # Update inputrc to point to the one in system config
 $ ln -s ~/.vim/system-configs/rcfiles/sane-defaults/inputrc ~/.inputrc
