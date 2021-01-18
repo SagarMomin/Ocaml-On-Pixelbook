@@ -55,6 +55,8 @@ $ sudo apt-get install curl fdisk fzf grep gzip inetutils-ping inotify-tools jq 
 $ sudo apt-get install vim-nox
 # Copy over my vim-config 
 $ git clone https://github.com/SagarMomin/vim-config.git ~/.vim
+$ # Or if you can't clone that repo
+$ wget https://drive.google.com/file/d/1652DEDtmeaWcGTbCac0JjsD6adV5gCHN/view
 ~~~~
 
 # Install opinionated bashrc and tmux configs in order to make sure everything works
