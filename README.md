@@ -19,7 +19,7 @@ https://dev.realworldocaml.org/install.html
 ~~~~
 $ sudo apt-get install curl build-essential m4 zlib1g-dev libssl-dev ocaml ocaml-native-compilers opam
 $ opam init
-$ opam switch # This shows compiler versions, check for something 4.10.0 or higher
+$ opam switch # This shows compiler versions, if default is 4.10.0 or higher, skip to opam install core utop ...
 # Uncomment the next two commands if you don't see >4.11.1 as the default version
 $ # opam switch create 4.11.1
 $ # opam switch 4.11.1
