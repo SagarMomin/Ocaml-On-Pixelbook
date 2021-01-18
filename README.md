@@ -66,13 +66,6 @@ $ cd ~/.vim/system-configs/ && bash smash-all-my-configs.sh && cd -
 $ ln -s ~/.vim/system-configs/rcfiles/sane-defaults/inputrc ~/.inputrc
 ~~~~
 
-# Making OCaml + vim = :D
-~~~~
-$ opam install merlin ocp-indent
-$ opam install user-setup # Not strictly necessary
-$ opam init
-~~~~
-
 # Make sure Core is available in utop
 ~~~~
 $ cat << EOM >> ~/.ocamlinit
