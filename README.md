@@ -20,7 +20,7 @@ https://dev.realworldocaml.org/install.html
 $ sudo apt-get install curl build-essential m4 zlib1g-dev libssl-dev ocaml ocaml-native-compilers opam
 $ opam init
 $ opam switch # This shows compiler versions, check for something 4.10.0 or higher
-$ # Uncomment the next two commands if you don't see >4.11.1 as the default version
+# Uncomment the next two commands if you don't see >4.11.1 as the default version
 $ # opam switch create 4.11.1
 $ # opam switch 4.11.1
 $ opam install core utop async yojson ppx_deriving_yojson core_extended core_bench menhir
@@ -54,9 +54,9 @@ $ sudo apt-get install curl fdisk fzf grep gzip inetutils-ping inotify-tools jq 
 ~~~~
 $ sudo apt-get install vim-nox
 # Copy over my vim-config 
-$ git clone https://github.com/SagarMomin/vim-config.git ~/.vim
-$ # Or if you can't clone that repo
 $ wget https://drive.google.com/file/d/1652DEDtmeaWcGTbCac0JjsD6adV5gCHN/view
+# Or if you're Sagar, glone the repo to keep it in sync
+$ git clone https://github.com/SagarMomin/vim-config.git ~/.vim
 ~~~~
 
 # Install opinionated bashrc and tmux configs in order to make sure everything works
