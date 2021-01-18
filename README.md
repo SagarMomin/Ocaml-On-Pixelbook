@@ -54,8 +54,9 @@ $ sudo apt-get install curl fdisk fzf grep gzip inetutils-ping inotify-tools jq 
 ~~~~
 $ sudo apt-get install vim-nox
 # Copy over my vim-config 
-$ wget https://drive.google.com/file/d/1652DEDtmeaWcGTbCac0JjsD6adV5gCHN/view
-# Or if you're Sagar, glone the repo to keep it in sync
+$ wget 'https://drive.google.com/u/0/uc?id=1652DEDtmeaWcGTbCac0JjsD6adV5gCHN&export=download' -O vim-smomin.zip 
+$ unzip vim-smomin.zip -d /tmp/vim-smomin && mv /tmp/vim-smomin/vim-config-master ~/.vim && rm -rf /tmp/vim-smomin
+$ # Or if you're Sagar, glone the repo to keep it in sync
 $ git clone https://github.com/SagarMomin/vim-config.git ~/.vim
 ~~~~
 
