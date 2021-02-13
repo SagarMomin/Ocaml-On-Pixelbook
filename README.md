@@ -33,7 +33,7 @@ $ opam install cohttp async_graphics cryptokit
 
 # sagarmomin install some tools
 ~~~~
-$ opam install patdiff sexp ocamlformat 
+$ opam install patdiff sexp ocamlformat merlin ocp-indent
 ~~~~
 
 # Housekeeping
